@@ -1,0 +1,37 @@
+.signup{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .signup-box{
+        padding: 40px ;
+        border: 1px solid black;
+        min-width: 400px;
+        border-radius: 4px;
+    }
+    label,input{
+        display: block;
+        width:100%;
+        margin-block:8px;
+    }
+    input{
+        padding:8px 16px;
+        border: 1px solid black;
+
+    }
+    .submit{
+        background-color: rgb(65, 248, 248);
+        font-weight: bold;
+        color: white;
+        margin-top: 16px;
+    }
+    .submit:hover{
+        background-color: rgb(0, 183, 255);
+    }
+    .heading{
+        text-align: center;
+    }
+    .subHeading{
+        margin-top: 16px;
+    }
+}

@@ -1,0 +1,10 @@
+export const KEY_ACCESS_TOKEN= "accessToken";
+export function getItem(key){
+  localStorage.getItem(key);
+}
+export function setItem(key,value){
+  localStorage.setItem(key,value);
+}
+export function removeItem(key){
+  localStorage.removeItem(key);
+}

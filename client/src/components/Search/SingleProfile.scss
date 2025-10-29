@@ -1,0 +1,23 @@
+// SingleProfile.scss
+.SingleProfile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px;
+  border: 1px solid #777;
+  border-radius: 4px;
+  margin-top: 4px;
+
+  cursor: pointer;
+
+  .profile-pic img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .profile-id {
+    font-weight: 500;
+  }
+}
