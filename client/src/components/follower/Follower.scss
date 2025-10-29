@@ -1,15 +1,49 @@
-.Follower{
+.Follower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-xs) 0;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color var(--transition-fast);
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  &:hover {
+    background-color: var(--hover-bg);
+    padding-left: var(--space-xs);
+    padding-right: var(--space-xs);
+    border-radius: var(--radius-sm);
+  }
+  
+  .user-info {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 60px;
-    .user-info{
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        cursor: pointer;
+    gap: 12px;
+    cursor: pointer;
+    
+    .name {
+      font-weight: 500;
+      color: var(--text-primary);
+      font-size: 14px;
     }
-    .follow-link{
-        color: var(--accent-color);
+  }
+  
+  .hover-link, .btn-primary {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+  }
+  
+  .follow-link {
+    color: var(--accent-color);
+    
+    &:hover {
+      color: var(--accent-hover);
     }
+  }
 }

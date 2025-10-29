@@ -1,49 +1,95 @@
-.Profile{
-    // margin-top: 60px;
-    .container{
-        display: flex;
-        gap: 20px;
+.Profile {
+  background: var(--secondary-bg);
+  min-height: 100vh;
+  
+  .container {
+    display: flex;
+    gap: var(--space-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-md);
+  }
+  
+  .left-part {
+    flex: 2;
+    max-width: 630px;
+  }
+  
+  .right-part {
+    flex: 1;
+    max-width: 350px;
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+  }
+  
+  .profile-card {
+    background: var(--primary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    text-align: center;
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-md);
+    
+    .user-img {
+      width: 120px;
+      height: 120px;
+      border-radius: var(--radius-full);
+      border: 4px solid var(--border-color);
+      object-fit: cover;
+      margin: 0 auto;
+      transition: transform var(--transition-base);
+      
+      &:hover {
+        transform: scale(1.05);
+        border-color: var(--accent-color);
+      }
     }
-    .left-part{
-        flex: 2;
-        overflow-y: auto;
+    
+    .user-name {
+      margin-top: var(--space-sm);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-primary);
     }
-    .right-part{
-        flex: 1;
-        margin-top: 20px;
+    
+    .bio {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-top: var(--space-xs);
+      line-height: 1.5;
     }
-    .profile-card{
-        border: 1px solid var(--border-color);
-        border-radius: 4px ;
-        text-align: center;
-        padding: 40px;
+    
+    .follower-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: var(--space-lg);
+      margin-top: var(--space-md);
+      padding-top: var(--space-sm);
+      border-top: 1px solid var(--border-color);
+      
+      h4 {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--text-primary);
         
-        .user-img{
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
+        &:first-child {
+          color: var(--accent-color);
         }
-        .user-name, .follower-info{
-            margin-top: 12px;
-
-        }
-        .bio{
-            color:#777;
-
-        }
-        .follower-info{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 40px;
-        }
-
-        .follow,.update-profile{
-            margin-top: 20px;
-            display: inline-block;
-        }
-        .follow-link{
-            color: var(--accent-color);
-        }
+      }
     }
+    
+    .update-profile, .follow-link {
+      margin-top: var(--space-md);
+      display: inline-block;
+      padding: 10px var(--space-md);
+      font-weight: 600;
+      font-size: 14px;
+    }
+    
+    .follow-link {
+      color: var(--accent-color);
+    }
+  }
 }
