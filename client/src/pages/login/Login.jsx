@@ -27,7 +27,7 @@ function Login() {
 				console.log('✅ Token set:', result.data.result.accessToken);
 			}
 
-
+			navigate('/');
 		// } catch (error) {
 		// 	console.error('Login failed:', error);
 		// 	alert('Invalid email or password');
