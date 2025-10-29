@@ -12,7 +12,7 @@ function Login() {
 		e.preventDefault();
 		// try {
 		// debugger;
-			console.log('Form submitted');
+			console.log('Form submitted',e);
 			const result = await axiosClient.post('/auth/login', {
 				email,
 				password

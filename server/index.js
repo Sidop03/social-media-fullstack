@@ -27,7 +27,8 @@ app.use(morgan('common'));
 app.use(cookieParser());
 app.use(cors({
 	credentials:true,
-	origin:'http://localhost:3000'
+	origin:['http://localhost:3000',
+	'https://social-media-fullstack-wmnu.onrender.com']
 }))
 
 app.get('/',(req,res)=>{
