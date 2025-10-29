@@ -60,10 +60,10 @@ function App() {
             <Route path='/updateProfile' element={<UpdateProfile/>}/>
           </Route>
         </Route>
-        {/* <Route element={<OnlyIfNotLoggedIn/>}> */}
+        <Route element={<OnlyIfNotLoggedIn/>}>
           <Route path='/login' element={<Login/>}></Route>
           <Route path='/signup' element={<SignUp/>}></Route>
-        {/* </Route> */}
+        </Route>
       </Routes>
     </div>
   );
